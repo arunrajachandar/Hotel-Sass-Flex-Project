@@ -39,7 +39,7 @@
                                 <div class="notification__heading">
                                     <h3 class="heading__tertiary">Notifications</h3>
                                 </div>
-                                <ul class="notification__list">
+                                <ul class="notification__list notification__list-border-top">
                                     <li class="notification__item">
                                         <a href="#" class="notification__link">
                                             <div class="notification__content">
@@ -244,7 +244,7 @@
                                 <div class="notification__heading">
                                     <h3 class="heading__tertiary">Chats</h3>
                                 </div>
-                                <ul class="notification__list">
+                                <ul class="notification__list notification__list-border-top">
                                     <li class="notification__item">
                                         <a href="#" class="notification__link">
                                             <div class="notification__content">
@@ -294,19 +294,51 @@
 
                     </div>
 
-                    <div class="user-nav__user">
+                    <div class="user-nav__icon-box">
+                        <input type="checkbox" class="navigation__checkbox" id="navi-toggle-setting">
+                        <label for="navi-toggle-setting" class="navigation__button">
+                                <img src="img/user.jpg" alt="User Photo" class="user-nav__user-photo">
 
-                        <input type="checkbox" class="navigation__checkbox" id="navi-toggle-settings">
-                        <label for="navi-toggle-settings" class="navigation__button">
-                            <img src="img/user.jpg" alt="User Photo" class="user-nav__user-photo">
-                            <span class="user-nav__user-name">Arun</span>
                         </label>
-                        <div class="navigation__background">
+                        <div class="navigation__background navigation__background-setting">
                             <div class="notification">
-                                &nbsp;adsf
+                                <ul class="notification__list">
+                                    <li class="notification__item">
+                                        <a href="#" class="notification__link">
+                                            <div class="user-nav__user-flex">
+                                                <img src="img/user.jpg" alt="User Photo" class="user-nav__user-photo">
+                                                <span class="user-nav__user-name">Arun</span>
+                                            </div>
+                                                        </a>
+                                </li>
+
+                                    <li class="notification__item">
+                                        <a href="#" class="notification__link">
+                                            Settings
+                                        </a>
+                                </li>
+                                <li class="notification__item">
+                                    <a href="#" class="notification__link">
+                                        Privacy
+                                    </a>
+                            </li>
+
+                            <li class="notification__item">
+                                <a href="#" class="notification__link">
+                                    Terms and Conditions
+                                </a>
+                        </li>
+                            </ul>
+                                <div class="notification__show-all">
+                                    <button class="btn-inline">
+                                        More Settings <span>&rarr;</span>
+                                    </button>
+                               </div>
                             </div>
+                        </div>
 
                     </div>
+
 
                 </nav>
             </header>

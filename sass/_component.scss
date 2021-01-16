@@ -115,7 +115,14 @@
     }
 
     &__user {
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
 
+        &-flex {
+            display: flex;
+            align-items: center;
+        }
     }
 
     &__user-photo {
@@ -128,6 +135,8 @@
     &__user-name {
 
     }
+
+
 
 }
 
@@ -622,13 +631,14 @@
 
     &__background {
         display: inline-block;
-        background: #fff;
+        // background: #fff;
+        z-index: 1000;
         position: absolute;
         top: 0;
         left: -100%;
         visibility: hidden;
         box-shadow: 0 1rem 1rem rgba(0,0,0,.4);
-        border-radius: 1px;
+        border-radius: 5px;
         transition: all .3s;
         transform: scale(0);
     }
@@ -638,7 +648,12 @@
         background: #fff;
         top: 105%;
         left: -100%;
-        transform: scale(1);
+
+            &-setting {
+                left: -140%;
+            }
+
+            transform: scale(1);
         visibility: visible;
         // width: 100%;
     }
@@ -658,7 +673,10 @@
         list-style: none;
         // padding: .5rem 0;
         border-bottom: 1px solid var(--color-grey-light-4);
-        border-top: 1px solid var(--color-grey-light-4);
+
+        &-border-top {
+            border-top: 1px solid var(--color-grey-light-4);
+        }
 
     }
 
