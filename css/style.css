@@ -576,6 +576,14 @@ body {
   max-width: 30rem;
   max-height: 30rem;
   overflow-y: scroll; }
+  .notification ::-webkit-scrollbar {
+    width: 10px; }
+  .notification ::-webkit-scrollbar-track {
+    background-color: var(--color-primary); }
+  .notification ::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary-light); }
+  .notification ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-primary); }
   .notification__list {
     list-style: none;
     border-bottom: 1px solid var(--color-grey-light-4); }
@@ -585,6 +593,8 @@ body {
     padding: .5rem; }
     .notification__item:not(:last-child) {
       border-bottom: 1px solid var(--color-grey-light-3); }
+    .notification__item:hover {
+      background-color: var(--color-grey-light-2); }
   .notification__link:link, .notification__link:visited {
     color: #000;
     text-decoration: none; }

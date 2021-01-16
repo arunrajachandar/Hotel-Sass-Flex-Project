@@ -667,7 +667,21 @@
     max-width: 30rem;
     max-height: 30rem;
     overflow-y: scroll;
-    
+    ::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background-color: var(--color-primary);       
+    }
+       
+      ::-webkit-scrollbar-thumb {
+        background-color: var(--color-primary-light); 
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: var(--color-primary); 
+      }
 
     &__list {
         list-style: none;
@@ -686,6 +700,10 @@
         &:not(:last-child){
             border-bottom: 1px solid var(--color-grey-light-3);
         }
+        &:hover{
+            background-color: var(--color-grey-light-2);
+        }
+
     }
 
     &__link:link,
